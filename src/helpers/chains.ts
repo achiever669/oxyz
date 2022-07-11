@@ -8,7 +8,7 @@ export const SUPPORTED_CHAINS: IChainData[] = [
     network: "mainnet",
     chain_id: 1,
     network_id: 1,
-    rpc_url: "https://mainnet.infura.io/v3/%API_KEY%",
+    rpc_url: "https://mainnet.infura.io/v3/66907cb31f6f4883bcd0c485c936e806",
     native_currency: {
       symbol: "ETH",
       name: "Ether",
@@ -17,6 +17,7 @@ export const SUPPORTED_CHAINS: IChainData[] = [
       balance: "",
     },
   },
+  
   {
     name: "Ethereum Ropsten",
     short_name: "rop",

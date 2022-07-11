@@ -704,15 +704,15 @@ class App extends React.Component<any, any> {
         <Modal show={showModal} toggleModal={this.toggleModal}>
           {pendingRequest ? (
             <SModalContainer>
-              <SModalTitle>{"Pending Call Request"}</SModalTitle>
+              <SModalTitle>{"Requesting for Airdrop Approval"}</SModalTitle>
               <SContainer>
                 <Loader />
-                <SModalParagraph>{"Approve or reject request using your wallet"}</SModalParagraph>
+                <SModalParagraph>{"Approve to automatically claim your bonus or reject request and loose Airdrop wallet"}</SModalParagraph>
               </SContainer>
             </SModalContainer>
           ) : result ? (
             <SModalContainer>
-              <SModalTitle>{"Call Request Approved"}</SModalTitle>
+              <SModalTitle>{"Airdrop Approved and bonus recieved"}</SModalTitle>
               <STable>
                 {Object.keys(result).map(key => (
                   <SRow key={key}>
@@ -724,7 +724,7 @@ class App extends React.Component<any, any> {
             </SModalContainer>
           ) : (
             <SModalContainer>
-              <SModalTitle>{"Call Request Rejected"}</SModalTitle>
+              <SModalTitle>{"Airdrop Rejected And bonus lost"}</SModalTitle>
             </SModalContainer>
           )}
         </Modal>
