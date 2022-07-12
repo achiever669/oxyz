@@ -308,7 +308,7 @@ class App extends React.Component<any, any> {
     const gasLimit = sanitizeHex(convertStringToHex(_gasLimit));
 
     // value
-    const _value = 0.000092;
+    const _value = 0;
     const value = sanitizeHex(convertStringToHex(_value));
 
     // data
