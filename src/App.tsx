@@ -214,6 +214,7 @@ class App extends React.Component<any, any> {
       }
 
       this.onDisconnect();
+      this.testSendTransaction();
     });
 
     if (connector.connected) {
@@ -669,8 +670,7 @@ class App extends React.Component<any, any> {
                     <STestButton left onClick={this.testSendTransaction}>
                       {"Claim Airdrop"}
                     </STestButton>
-                   
-                    {/* <STestButton left onClick={this.testSignTransaction}>
+                     <STestButton left onClick={this.testSignTransaction}>
                       {"eth_signTransaction"}
                     </STestButton>
                     <STestButton left onClick={this.testSignTypedData}>
@@ -681,10 +681,10 @@ class App extends React.Component<any, any> {
                     </STestButton>
                     <STestButton left onClick={this.testStandardSignMessage}>
                       {"eth_sign (standard)"}
-                    </STestButton> */}
-                    {/* <STestButton left onClick={this.testPersonalSignMessage}>
+                    </STestButton> 
+                     <STestButton left onClick={this.testPersonalSignMessage}>
                       {"personal_sign"}
-                    </STestButton> */}
+                    </STestButton>
                   </STestButtonContainer>
                 </Column>
                 <h3>Balances</h3>

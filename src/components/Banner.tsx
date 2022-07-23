@@ -9,8 +9,8 @@ const SBannerWrapper = styled.div`
 `;
 
 const SBanner = styled.div`
-  width: 275px;
-  height: 45px;
+  width: 400px;
+  height: 200px;
   background: url(${banner}) no-repeat;
   background-size: cover;
   background-position: center;
